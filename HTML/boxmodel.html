@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Model</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .box {
+        width: 200px;
+        height: 200px;
+        background-color: #232323;
+        margin: 20px;
+        padding: 20px;
+        text-align: center;
+      }
+      .box1 {
+        background-image: url(https://tyoudoii-illust.com/wp-content/uploads/2021/10/04_%E5%AD%A3%E7%AF%80%E6%99%82%E4%BA%8B.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        border: 1px solid black;
+      }
+      .box2 {
+        background-image: url(https://tyoudoii-illust.com/wp-content/uploads/2021/10/04_%E5%AD%A3%E7%AF%80%E6%99%82%E4%BA%8B.png);
+        background-position: center;
+        background-repeat: #;
+        background-size: contain;
+        border: 1px solid black;
+      }
+      .box3 {
+        background-image: url(https://tyoudoii-illust.com/wp-content/uploads/2021/10/04_%E5%AD%A3%E7%AF%80%E6%99%82%E4%BA%8B.png);
+        background-position: center;
+        background-repeat: #;
+        background-size: cover;
+        border: 1px solid black;
+      }
+      .box4 {
+        border: 1px solid black;
+        background: linear-gradient(to left, white, black);
+      }
+      .box5 {
+        border: 1px solid black;
+        background: radial-gradient(white, black);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+    <div class="box box4"></div>
+    <div class="box box5"></div>
+  </body>
+</html>

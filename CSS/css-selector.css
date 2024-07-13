@@ -1,0 +1,22 @@
+/* universal selector */
+* {
+  color: yellowgreen;
+}
+/* type selector */
+h1 {
+  color: brown;
+}
+/* class selector */
+.heading1 {
+  color: cadetblue;
+}
+/* pseudo style */
+a:hover {
+  color: darkcyan;
+}
+a:visited {
+    color: green;
+  }
+p{
+    font-family: ;
+}

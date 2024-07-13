@@ -1,0 +1,98 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: grid;
+  column-gap: 20px;
+  row-gap: 30px;
+  width: 90%;
+  margin: auto;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(6, auto);
+}
+.card {
+  padding: 20px;
+  border-radius: 5px;
+  border: 0.2px solid gray;
+  color: #0b0087;
+  background-image: url(https://gridbyexample.com/img/tiny_grid.png);
+}
+.card1 {
+  grid-column: span 4;
+  background-image: url(https://gridbyexample.com/img/inflicted.png);
+  color: #fdfaff;
+}
+.card3 {
+  grid-column: span 5;
+  border-radius: 10px;
+  background: #5d35b1;
+  color: #fdfaff;
+}
+.card4 {
+  grid-column: span 2;
+  position: relative;
+}
+.card5 {
+  grid-column: 3 / span 3;
+}
+.card6 {
+  grid-column: span 4;
+}
+.card8 {
+  grid-column: span 3;
+}
+.card11 {
+  grid-column: span 5;
+}
+h1,
+h2 {
+  line-height: 50px;
+}
+h1 {
+  font-size: 2rem;
+}
+p {
+  font-size: 20px;
+}
+.card1 p span {
+  text-decoration: underline;
+}
+.label {
+  position: absolute;
+  background: #087f23;
+  top: -10px;
+  left: -20px;
+  font-size: 18px;
+  color: #fdfaff;
+  transform: rotate(-20deg);
+  padding: 0.3rem 0.5rem;
+}
+
+@media (max-width: 767px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(11, auto);
+  }
+  .card {
+    grid-column: span 1;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, auto);
+  }
+  .card4,
+  .card10 {
+    grid-column: span 3;
+  }
+  .card5,
+  .card9,
+  .card11 {
+    grid-column: span 2;
+  }
+}

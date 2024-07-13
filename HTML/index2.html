@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>CSS-Layout</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .top-bot {
+        height: 100px;
+        width: 500px;
+        background: darkblue;
+      }
+      .mid{
+        height: 200px;
+        width: 500px;
+        background: red;
+        padding-top: 25px;
+      }
+      img{
+        display: block;
+        width: 300px;
+        height: 150px;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Section > Div -->
+    <main class="flag">
+      <section class="top-bot"></section>
+      <section class="mid">
+        <img src="../Images/angkorwat.png" alt="angkorwat">
+      </section>
+      <section class="top-bot"></section>
+    </main>
+  </body>
+</html>

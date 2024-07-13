@@ -1,0 +1,48 @@
+.container {
+  width: 80%;
+  margin: auto;
+  background-color: floralwhite;
+  padding: 20px;
+}
+h1 {
+  text-align: center;
+  color: blueviolet;
+  font-variant: small-caps;
+}
+p span {
+  font-family: monospace;
+  font-size: 15px;
+  font-weight: 900;
+  color: blueviolet;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+}
+small {
+  font-weight: 900;
+  font-family: monospace;
+}
+button {
+  border: 0px;
+  background-color: dodgerblue;
+  color: aliceblue;
+  font-family: monospace;
+  padding: 10px;
+  border-radius: 8px;
+  letter-spacing: 0.3rem;
+  margin: 0 0 20px 0;
+}
+table{
+    text-align: center;
+    border-collapse: collapse;
+    margin: auto;
+    height: 150px;
+    width: 600px;
+}
+th{
+    background-color: #40A578;
+    color: aliceblue;
+    height: 30px;
+}
+.darker{
+    background: #EEEDEB;
+}

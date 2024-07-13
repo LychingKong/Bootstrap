@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+    <style>
+      table {
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <table border="1" width="500" height="125">
+        <thead align="center">
+          <tr bgcolor="lightblue">
+            <th rowspan="2">Name</th>
+            <th rowspan="2">ID</th>
+            <th colspan="2">Membership Date</th>
+            <th rowspan="2">Balance</th>
+          </tr>
+          <tr>
+            <th bgcolor="lightgreen">Join</th>
+            <th bgcolor="lightcoral">Cancel</th>
+          </tr>
+        </thead>
+        <tbody align="center">
+          <colgroup>
+            <col span="1" bgcolor="#ccccff" />
+          </colgroup>
+
+          <tr>
+            <td>Margaret Nguyen</td>
+            <td>427311</td>
+            <td>June 3, 2010</td>
+            <td>n/a</td>
+            <td>0.00</td>
+          </tr>
+          <tr>
+            <td>Margaret Nguyen</td>
+            <td>427311</td>
+            <td>June 3, 2010</td>
+            <td>n/a</td>
+            <td>0.00</td>
+          </tr>
+          <tr>
+            <td>Margaret Nguyen</td>
+            <td>427311</td>
+            <td>June 3, 2010</td>
+            <td>n/a</td>
+            <td>0.00</td>
+          </tr>
+        </tbody>
+        <tfoot align="center">
+          <tr>
+            <th bgcolor="lightyellow" colspan="4">Total Balance:</th>
+            <th>00.00</th>
+          </tr>
+        </tfoot>
+      </table>
+    </main>
+    <footer></footer>
+  </body>
+</html>

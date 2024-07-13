@@ -1,0 +1,54 @@
+main {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  gap: 10px;
+  & .box {
+    width: 200px;
+    height: 200px;
+    background-color: #8093f1;
+    border-radius: 10px;
+    display: grid;
+    place-content: center;
+    font-size: 50px;
+  }
+  & .box:nth-child(1) {
+    background-color: #f4845f;
+  }
+  & .box:nth-child(2) {
+    background-color: #5dd39e;
+    animation-name: slide;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+  }
+  & .box:nth-child(3) {
+    background-color: #ffd000;
+  }
+  & .box:hover {
+    background-color: #8093f1;
+    border-radius: 50%;
+    transform: scale(2);
+  }
+  & .box {
+    transition-property: background-color border-radius;
+    transition-duration: 0.5s;
+    transition-delay: 0.5s;
+  }
+}
+@keyframes slide{
+    0%{
+        transform: rotate(180deg);
+    }
+    20%{
+        transform: translateX(200px);
+    }
+    40%{
+        transform: rotate(180deg);
+    }
+    60%{
+        transform: translateX(-200px);
+    }
+    80%{
+        transform: rotate(180deg);
+    }
+}
